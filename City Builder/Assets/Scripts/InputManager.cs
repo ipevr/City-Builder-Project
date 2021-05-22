@@ -2,12 +2,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class InputManager : MonoBehaviour
 {
+    [System.Serializable]
+    public class UnityEvent: UnityEvent<Vector3> { }
+
+    public Action<Vector3> OnPointerDownHandler;
+
     [SerializeField] LayerMask mouseInputMask;
-    //[SerializeField] GameObject buildingPrefab = null;
+
+    public UnityEvent OnHit;
 
     #region Unity Callbacks
 
@@ -30,16 +37,10 @@ public class InputManager : MonoBehaviour
             if (Physics.Raycast(ray.origin, ray.direction, out hit, Mathf.Infinity, mouseInputMask))
             {
                 Vector3 position = hit.point - transform.position;
+                OnHit?.Invoke(position);
             }
         }
-
     }
-
-    //private void CreateBuilding(Vector3 gridPosition)
-    //{
-    //    Instantiate(buildingPrefab, gridPosition, Quaternion.identity);
-    //}
-
 
     #endregion
 }
