@@ -1,0 +1,327 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.7f1 (d91830b65d9b) revision 14227504'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.985; Version 2009; 64bit' Language: 'de' Physical Memory: 16318 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\sw\Unity\2021.1.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Daten/Ingo/repos/City Builder
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53999
+Successfully changed project path to: D:/Daten/Ingo/repos/City Builder
+D:/Daten/Ingo/repos/City Builder
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 30.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.7f1 (d91830b65d9b)
+[Subsystems] Discovering subsystems at path D:/sw/Unity/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Daten/Ingo/repos/City Builder/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f07)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'D:/sw/Unity/2021.1.7f1/Editor/Data/Managed'
+Mono path[1] = 'D:/sw/Unity/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/sw/Unity/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/sw/Unity/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000900 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 27.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.740 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000625 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.762 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1518 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.4 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 72 unused Assets to reduce memory usage. Loaded Objects now: 1971.
+Total: 2.071900 ms (FindLiveObjects: 0.128100 ms CreateObjectMapping: 0.039700 ms MarkObjects: 1.782100 ms  DeleteObjects: 0.121200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Materials/Grass.mat
+  artifactKey: Guid(2329c2ed86933024081e3d104feab5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Grass.mat using Guid(2329c2ed86933024081e3d104feab5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8afed2d9c6369b8849185bc3bc15d8c') in 0.091374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Materials/Transparent.mat
+  artifactKey: Guid(19aeccfa875758143b1b8fc7176e8f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Transparent.mat using Guid(19aeccfa875758143b1b8fc7176e8f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b049623c454bf7cafd7bbc4178a479f') in 0.292675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.664632 seconds.
+  path: Packages/com.unity.probuilder/Content/Resources/Textures/GridBox_Default.png
+  artifactKey: Guid(6344bf96fbda94141a525046d088fb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Resources/Textures/GridBox_Default.png using Guid(6344bf96fbda94141a525046d088fb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b59ff76899b706a745cd4782133448') in 0.042095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.773267 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Normal_Horizontal_Light.png
+  artifactKey: Guid(d6ffabc4f227bf34d9c97357a84009be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Normal_Horizontal_Light.png using Guid(d6ffabc4f227bf34d9c97357a84009be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e650aa279cc5842d0193c01c860d3247') in 0.010661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/GameAssets/Models/Buildings pack by @Quaternius/Textures/HouseTexture4.png
+  artifactKey: Guid(8c7bdfc8650e6c545bd2e81bc23a919d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Models/Buildings pack by @Quaternius/Textures/HouseTexture4.png using Guid(8c7bdfc8650e6c545bd2e81bc23a919d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93a72827369a788b2f7551eef24f36b') in 0.009001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/GameAssets/Models/Buildings pack by @Quaternius/Textures/HouseTexture1.png
+  artifactKey: Guid(05d7c34f13e293f40a86e116be30ffe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Models/Buildings pack by @Quaternius/Textures/HouseTexture1.png using Guid(05d7c34f13e293f40a86e116be30ffe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '390755b96e36da51016e1cc25c394c8f') in 0.020508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Pressed_Horizontal.png
+  artifactKey: Guid(6cfa1f4fa4f524777b44a27293390e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Pressed_Horizontal.png using Guid(6cfa1f4fa4f524777b44a27293390e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6102ac558dcd51394b98f26214828065') in 0.015163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_1.png
+  artifactKey: Guid(0f8fa14b3731cda4e947062e734d5e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_1.png using Guid(0f8fa14b3731cda4e947062e734d5e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6e94d142ac5f40a1067b22cba87cb1') in 0.018090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/HandleAlign_Local.png
+  artifactKey: Guid(a187dcc3eec2047b38062e5def2d4dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/HandleAlign_Local.png using Guid(a187dcc3eec2047b38062e5def2d4dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f4a55dd3003272a37e46179ee5338b') in 0.020344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Help_Light.png
+  artifactKey: Guid(3f608a0570cfcf446821d6adfc48c720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Help_Light.png using Guid(3f608a0570cfcf446821d6adfc48c720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e806316f71032510b28db495c53c1b34') in 0.020527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Pressed_Horizontal_Light.png
+  artifactKey: Guid(ceaaf12e14b14a14a9cfb6c1345984ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Pressed_Horizontal_Light.png using Guid(ceaaf12e14b14a14a9cfb6c1345984ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '129722136009915d0febe6099029d6f6') in 0.015690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Normal_Vertical_Light.png
+  artifactKey: Guid(e5bc8a48387a5e441975e560374e9558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Normal_Vertical_Light.png using Guid(e5bc8a48387a5e441975e560374e9558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0377f3582c2210efdb1233922df5ead3') in 0.012689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_5.png
+  artifactKey: Guid(a1ae041906217ae44a774d4ca139af50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_5.png using Guid(a1ae041906217ae44a774d4ca139af50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9c80fcdb046199931d9eec3757af4d') in 0.011935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Pressed_Vertical_Light.png
+  artifactKey: Guid(0b6c87828bb440646aae0621230d5d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Pressed_Vertical_Light.png using Guid(0b6c87828bb440646aae0621230d5d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36666fdf391aeede9786204c2100ade5') in 0.009556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_6.png
+  artifactKey: Guid(79b86f3419b87f3429164a956da8cfab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_6.png using Guid(79b86f3419b87f3429164a956da8cfab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a69672d501df9f5c469da71a4d0614') in 0.012715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Packages/com.unity.probuilder/Content/Material/Textures/GridBox_NoDraw.png
+  artifactKey: Guid(464ca14f3cfaf433582758afa13a9473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Material/Textures/GridBox_NoDraw.png using Guid(464ca14f3cfaf433582758afa13a9473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '701fe66d386fc15fb26b6fd2ef4c2a84') in 0.007963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/GameAssets/Models/Buildings pack by @Quaternius/Textures/HouseTexture3.png
+  artifactKey: Guid(59c1f427eebc9d94a9040835ac9b71f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Models/Buildings pack by @Quaternius/Textures/HouseTexture3.png using Guid(59c1f427eebc9d94a9040835ac9b71f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feecaf6d2f15bafd0dd8778fcd8bafc1') in 0.019162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/GameAssets/Models/Buildings pack by @Quaternius/Textures/Hotel.png
+  artifactKey: Guid(9abfc9b19e3fa8f49808ec96745be989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Models/Buildings pack by @Quaternius/Textures/Hotel.png using Guid(9abfc9b19e3fa8f49808ec96745be989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74536dacf755221c237042a3d01f270') in 0.014495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_5.png
+  artifactKey: Guid(acde5141d5f4f7a4188394bd52c4dc38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_5.png using Guid(acde5141d5f4f7a4188394bd52c4dc38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b81074de8efc28df6271f8ef0f601ef') in 0.008515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_6.png
+  artifactKey: Guid(999434725cbc2be4eb54043b36efd4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_6.png using Guid(999434725cbc2be4eb54043b36efd4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '021c5d1729a173c1c47b4575febd7806') in 0.009623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Pressed_Vertical.png
+  artifactKey: Guid(53c57c97fb66b4dad806f2dc1545afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Pressed_Vertical.png using Guid(53c57c97fb66b4dad806f2dc1545afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48aa243615721e82af654baba7598b30') in 0.009946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Packages/com.unity.probuilder/Content/Material/Textures/GridBox_Trigger.png
+  artifactKey: Guid(b3fd87e2e956e41b0b43f76bb50a4934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Material/Textures/GridBox_Trigger.png using Guid(b3fd87e2e956e41b0b43f76bb50a4934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93b87b0a3f7852bd9089ece52054796a') in 0.010107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/GameAssets/Models/Buildings pack by @Quaternius/Textures/HouseTexture2.png
+  artifactKey: Guid(0a92b822544217742a229c05adbc0381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Models/Buildings pack by @Quaternius/Textures/HouseTexture2.png using Guid(0a92b822544217742a229c05adbc0381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc10a743211644531e14bd536334ca8') in 0.008941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_1.png
+  artifactKey: Guid(3c2f1fb7e4b66e74191b7c328ada52d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_1.png using Guid(3c2f1fb7e4b66e74191b7c328ada52d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '129f6e17019a636f0930f3aad3db0a95') in 0.008363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/HandleAlign_World.png
+  artifactKey: Guid(07353549ad6f54463b035ea6bcc87fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/HandleAlign_World.png using Guid(07353549ad6f54463b035ea6bcc87fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2dadb2a46b71ef3310b640997e3ef3') in 0.007349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_0.png
+  artifactKey: Guid(6017f374382d64245a0a4aab668e6f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_0.png using Guid(6017f374382d64245a0a4aab668e6f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd088fd132a25470e13a2c8b1e0687ec') in 0.008356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/HandleAlign_Custom.png
+  artifactKey: Guid(1ca3f1b1d9b7b4e63bcb89526f13507d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/HandleAlign_Custom.png using Guid(1ca3f1b1d9b7b4e63bcb89526f13507d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1685bb753d8f3a7eaa896c8282a00185') in 0.007335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/HandleAlign_Plane.png
+  artifactKey: Guid(6d8a0cbf20c07418bbb33ec170d3a000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/HandleAlign_Plane.png using Guid(6d8a0cbf20c07418bbb33ec170d3a000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2f7e17e00fdd796836a7a2ae405402') in 0.006780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_4.png
+  artifactKey: Guid(6fa5cf178eaaa5f42b820f636bb6e0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_4.png using Guid(6fa5cf178eaaa5f42b820f636bb6e0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed0cc5cd2e275a5b89f62ed1ba57fa6') in 0.007742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_3.png
+  artifactKey: Guid(373f9bf6b0841af4ebf26d25e4a3f4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_3.png using Guid(373f9bf6b0841af4ebf26d25e4a3f4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6578facecd7c6b2f0047f5c8838b0f69') in 0.007211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Packages/com.unity.probuilder/Content/Material/Textures/GridBox_Collider.png
+  artifactKey: Guid(7e4b97337334f42d2a700647fd938234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Material/Textures/GridBox_Collider.png using Guid(7e4b97337334f42d2a700647fd938234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b1514a1e81a7146d79d7e3dd3c522ed') in 0.007929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_2.png
+  artifactKey: Guid(a469f920b21fc7c4fb5b950917ce2fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_2.png using Guid(a469f920b21fc7c4fb5b950917ce2fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d3b41ee9cd289219f837e1f6a60952e') in 0.007954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Normal_Vertical.png
+  artifactKey: Guid(04fdee38d88f74afe85c35116ced973d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Geo_Normal_Vertical.png using Guid(04fdee38d88f74afe85c35116ced973d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b58c04f92a49f039974d83ce062096') in 0.008212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Help.png
+  artifactKey: Guid(85fe0ebd4e86846489f61740f277ec45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Help.png using Guid(85fe0ebd4e86846489f61740f277ec45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '834576e4a2e93dc789e211759d4ecbb9') in 0.006984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_2.png
+  artifactKey: Guid(1abfe0e165ca1e9428b455ffc9a2d9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_2.png using Guid(1abfe0e165ca1e9428b455ffc9a2d9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '445930a5b5c5ab821adf68282f427f9e') in 0.008529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_3.png
+  artifactKey: Guid(c072b653e98a06e40857d76ca8c7eecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_3.png using Guid(c072b653e98a06e40857d76ca8c7eecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d28ca6749ec57bcd42a6f770767d5c') in 0.009647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_0.png
+  artifactKey: Guid(50b54341495978843a6f85583ed4417d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise64px/LDR_LLL1_0.png using Guid(50b54341495978843a6f85583ed4417d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d4b9a2d8967427c25261ec63d23b376') in 0.007092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_4.png
+  artifactKey: Guid(b52d5033b68309943a2386c270a90f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Textures/BlueNoise256px/LDR_LLL1_4.png using Guid(b52d5033b68309943a2386c270a90f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3976f4c84eb90ed8982d77b445f3efb') in 0.009102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1793.120868 seconds.
+  path: Assets/GameAssets/Prefabs/Nature/Tree.prefab
+  artifactKey: Guid(757b41affe307934ba94b1ef1e410011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Prefabs/Nature/Tree.prefab using Guid(757b41affe307934ba94b1ef1e410011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '150a16c368e9c4b04e9d4d14c02039b4') in 0.552779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 139.326511 seconds.
+  path: Assets/GameAssets/Prefabs/NPC/Animal_Lama (1).prefab
+  artifactKey: Guid(ef20dddf30e01ea4f9aadb84f4ab9f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Prefabs/NPC/Animal_Lama (1).prefab using Guid(ef20dddf30e01ea4f9aadb84f4ab9f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e540496c7cc8025a1fc2dcda7380c51c') in 0.051103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/GameAssets/Prefabs/NPC/NPC_man_2.prefab
+  artifactKey: Guid(70af3a0c7d8c52e4fb36c512896e9e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Prefabs/NPC/NPC_man_2.prefab using Guid(70af3a0c7d8c52e4fb36c512896e9e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b6f0e3bccc13a91cef4f9443aa1235') in 0.535496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/GameAssets/Prefabs/NPC/NPC_man_1.prefab
+  artifactKey: Guid(1b464672ec8aebe4085dd30eb8a9194f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Prefabs/NPC/NPC_man_1.prefab using Guid(1b464672ec8aebe4085dd30eb8a9194f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03eff1dc30528ff4cba9a6a2e8d3d41c') in 0.014563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/GameAssets/Prefabs/NPC/Woman_1.prefab
+  artifactKey: Guid(971574c18fe619847afe48166d5af28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Prefabs/NPC/Woman_1.prefab using Guid(971574c18fe619847afe48166d5af28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0bc54f17975563c7e181a7ddbfe4c8a') in 0.014044 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
