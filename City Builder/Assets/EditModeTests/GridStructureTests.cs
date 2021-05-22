@@ -6,20 +6,52 @@ using UnityEngine.TestTools;
 
 public class GridStructureTests
 {
-    // A Test behaves as an ordinary method
-    [Test]
-    public void GridStructureTestsSimplePasses()
+    GridStructure gridStructure;
+
+    [OneTimeSetUp]
+    public void Init()
     {
-        // Use the Assert class to test conditions
+        gridStructure = new GridStructure(3);
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator GridStructureTestsWithEnumeratorPasses()
+    // A Test behaves as an ordinary method
+    [Test]
+    public void GetGridPositionVectorZeroPasses()
     {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
+        // Arrange
+        Vector3 position = new Vector3(0, 0, 0);
+
+        // Act
+        Vector3 returnPosition = gridStructure.GetGridPosition(position);
+
+        // Assert
+        Assert.AreEqual(Vector3.zero, returnPosition);
     }
+
+    [Test]
+    public void GetGridPositionFloatsPasses()
+    {
+        // Arrange
+        Vector3 position = new Vector3(2.9f, 0, 2.9f);
+
+        // Act
+        Vector3 returnPosition = gridStructure.GetGridPosition(position);
+
+        // Assert
+        Assert.AreEqual(Vector3.zero, returnPosition);
+    }
+
+    [Test]
+    public void GetGridPositionFails()
+    {
+        // Arrange
+        Vector3 position = new Vector3(3.1f, 0, 0);
+
+        // Act
+        Vector3 returnPosition = gridStructure.GetGridPosition(position);
+
+        // Assert
+        Assert.AreNotEqual(Vector3.zero, returnPosition);
+    }
+
 }
