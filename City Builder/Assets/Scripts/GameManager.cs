@@ -7,12 +7,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] InputManager inputManager = null;
     [SerializeField] PlacementManager placementManager = null;
     [SerializeField] int cellSize = 3;
+    [SerializeField] int width = 100;
+    [SerializeField] int length = 100;
 
     private GridStructure grid;
 
     private void Start()
     {
-        grid = new GridStructure(cellSize);
+        grid = new GridStructure(cellSize, width, length);
 
         inputManager.OnHit.AddListener(HandleInputHit);
     }
@@ -25,6 +27,10 @@ public class GameManager : MonoBehaviour
     private void HandleInputHit(Vector3 position)
     {
         Vector3 gridPosition = grid.GetGridPosition(position);
-        placementManager.CreateBuilding(gridPosition);
+
+        if (!grid.IsCellTaken(gridPosition))
+        {
+            placementManager.CreateBuilding(gridPosition, grid);
+        }
     }
 }

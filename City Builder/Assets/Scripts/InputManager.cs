@@ -10,7 +10,6 @@ public class InputManager : MonoBehaviour
     [System.Serializable]
     public class UnityEvent: UnityEvent<Vector3> { }
 
-    public Action<Vector3> OnPointerDownHandler;
 
     [SerializeField] LayerMask mouseInputMask;
 
