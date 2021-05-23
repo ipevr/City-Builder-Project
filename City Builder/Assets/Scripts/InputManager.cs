@@ -5,19 +5,22 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class InputManager : MonoBehaviour
+[System.Serializable]
+public class UnityVector3Event : UnityEvent<Vector3> { }
+
+
+public abstract class InputManager : MonoBehaviour
 {
-    [System.Serializable]
-    public class UnityEvent: UnityEvent<Vector3> { }
 
-
-    [SerializeField] LayerMask mouseInputMask;
-
-    public UnityEvent OnHit;
+    private UnityVector3Event onHitEvent = new UnityVector3Event();
+    public virtual UnityVector3Event OnHit
+    {
+        get { return onHitEvent; }
+    }
 
     #region Unity Callbacks
 
-    private void Update()
+    protected virtual void Update()
     {
         GetInput();
     }
@@ -27,19 +30,7 @@ public class InputManager : MonoBehaviour
 
     #region Private Methods
 
-    private void GetInput()
-    {
-        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
-        {
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray.origin, ray.direction, out hit, Mathf.Infinity, mouseInputMask))
-            {
-                Vector3 position = hit.point - transform.position;
-                OnHit?.Invoke(position);
-            }
-        }
-    }
+    protected abstract void GetInput();
 
     #endregion
 }

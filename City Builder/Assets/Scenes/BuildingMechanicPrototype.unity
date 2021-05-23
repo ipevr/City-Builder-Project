@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &698834846 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1162961603201888897, guid: 8f25608978652294b961b02af7fc83b0, type: 3}
+  m_PrefabInstance: {fileID: 1196107779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98b5ca5cfd41d74f8b3b801626f38a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1196107779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -154,6 +165,22 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1612320762333959921, guid: 8f25608978652294b961b02af7fc83b0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612320762333959921, guid: 8f25608978652294b961b02af7fc83b0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612320762333959921, guid: 8f25608978652294b961b02af7fc83b0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612320762333959921, guid: 8f25608978652294b961b02af7fc83b0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3499292122888468173, guid: 8f25608978652294b961b02af7fc83b0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -248,6 +275,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5696252213782381169, guid: 8f25608978652294b961b02af7fc83b0, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247193265811914520, guid: 8f25608978652294b961b02af7fc83b0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247193265811914520, guid: 8f25608978652294b961b02af7fc83b0, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7883278744163783890, guid: 8f25608978652294b961b02af7fc83b0, type: 3}
@@ -533,7 +568,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputManager: {fileID: 1826837955}
   placementManager: {fileID: 1617517972}
+  uiController: {fileID: 698834846}
   cellSize: 3
+  width: 100
+  length: 100
 --- !u!4 &1285183057
 Transform:
   m_ObjectHideFlags: 0
@@ -869,15 +907,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826837954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaf73ada8bcad5d46b3578f84ab1ac6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 98c0267aa32a3ae40973e7c0545ee650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mouseInputMask:
     serializedVersion: 2
     m_Bits: 128
-  OnHit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1826837956
 Transform:
   m_ObjectHideFlags: 0
