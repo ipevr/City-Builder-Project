@@ -13,6 +13,9 @@ public abstract class InputManager : MonoBehaviour
 {
 
     public UnityVector3Event OnPointerDownHandler;
+    public UnityVector3Event OnPointerDragHandler;
+    public UnityVector3Event OnPointerUpHandler;
+
     public UnityVector3Event OnPointerSecondDownHandler;
     public UnityVector3Event OnPointerSecondDragHandler;
     public UnityVector3Event OnPointerSecondUpHandler;

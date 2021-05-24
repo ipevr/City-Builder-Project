@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class MouseInputManager : InputManager
@@ -18,14 +20,40 @@ public class MouseInputManager : InputManager
     {
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray.origin, ray.direction, out hit, Mathf.Infinity, mouseInputMask))
-            {
-                Vector3 position = hit.point - transform.position;
-                OnPointerDownHandler?.Invoke(position);
-            }
+            CallEventOnPointer((position) => OnPointerDownHandler?.Invoke(position));
         }
+
+        if (Input.GetMouseButton(0))
+        {
+            CallEventOnPointer((position) => OnPointerDragHandler?.Invoke(position));
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            CallEventOnPointer((position) => OnPointerUpHandler?.Invoke(position));
+        }
+    }
+
+    private void CallEventOnPointer(UnityAction<Vector3> action)
+    {
+        Vector3? position = GetMouseHitPosition();
+        if (position.HasValue)
+        {
+            action.Invoke(position.Value);
+        }
+    }
+
+    private Vector3? GetMouseHitPosition()
+    {
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        Vector3? position = null;
+        if (Physics.Raycast(ray.origin, ray.direction, out hit, Mathf.Infinity, mouseInputMask))
+        {
+            position = hit.point - transform.position;
+        }
+
+        return position;
     }
 
     private void GetPanningPointer()

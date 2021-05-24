@@ -25,10 +25,22 @@ public class GameManager : MonoBehaviour
         cameraMovement.SetCameraBounds(0, width * cellSize, 0, length * cellSize);
 
         inputManager.OnPointerDownHandler.AddListener(HandlePointerDownEvent);
+        inputManager.OnPointerDragHandler.AddListener(HandlePointerDragEvent);
+        inputManager.OnPointerUpHandler.AddListener(HandlePointerUpEvent);
         inputManager.OnPointerSecondDownHandler.AddListener(HandleStartCameraMovement);
         inputManager.OnPointerSecondDragHandler.AddListener(HandleCameraMovement);
         uiController.OnBuildAreaHandler.AddListener(HandlePlacementMode);
         uiController.OnCancelActionHandler.AddListener(CancleAction);
+    }
+
+    private void HandlePointerUpEvent(Vector3 position)
+    {
+        Debug.Log("Pointer up at " + position);
+    }
+
+    private void HandlePointerDragEvent(Vector3 position)
+    {
+        Debug.Log("Pointer drag at " + position);
     }
 
     private void OnDisable()
