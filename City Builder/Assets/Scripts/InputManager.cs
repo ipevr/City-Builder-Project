@@ -12,11 +12,11 @@ public class UnityVector3Event : UnityEvent<Vector3> { }
 public abstract class InputManager : MonoBehaviour
 {
 
-    private UnityVector3Event onHitEvent = new UnityVector3Event();
-    public virtual UnityVector3Event OnHit
-    {
-        get { return onHitEvent; }
-    }
+    public UnityVector3Event OnPointerDownHandler;
+    public UnityVector3Event OnPointerSecondDownHandler;
+    public UnityVector3Event OnPointerSecondDragHandler;
+    public UnityVector3Event OnPointerSecondUpHandler;
+
 
     #region Unity Callbacks
 

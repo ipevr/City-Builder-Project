@@ -35,7 +35,6 @@ public class GridStructure
 
     public Vector2Int GetGridIndex(Vector3 gridPosition)
     {
-        Debug.Log(new Vector2Int((int)gridPosition.x / cellSize, (int)gridPosition.z / cellSize));
         return new Vector2Int((int)gridPosition.x / cellSize, (int)gridPosition.z / cellSize);
     }
 

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] InputManager inputManager = null;
     [SerializeField] PlacementManager placementManager = null;
     [SerializeField] UIController uiController = null;
+    [SerializeField] CameraMovement cameraMovement = null;
     [SerializeField] int cellSize = 3;
     [SerializeField] int width = 100;
     [SerializeField] int length = 100;
@@ -21,15 +22,20 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         grid = new GridStructure(cellSize, width, length);
+        cameraMovement.SetCameraBounds(0, width * cellSize, 0, length * cellSize);
 
-        inputManager.OnHit.AddListener(HandleInputHit);
+        inputManager.OnPointerDownHandler.AddListener(HandlePointerDownEvent);
+        inputManager.OnPointerSecondDownHandler.AddListener(HandlePointerSecondDownEvent);
+        inputManager.OnPointerSecondDragHandler.AddListener(HandlePointerSecondDragEvent);
         uiController.OnBuildAreaHandler.AddListener(HandlePlacementMode);
         uiController.OnCancelActionHandler.AddListener(CancleAction);
     }
 
     private void OnDisable()
     {
-        inputManager.OnHit.RemoveListener(HandleInputHit);
+        inputManager.OnPointerDownHandler.RemoveListener(HandlePointerDownEvent);
+        inputManager.OnPointerSecondDownHandler.RemoveListener(HandlePointerSecondDownEvent);
+        inputManager.OnPointerSecondDragHandler.RemoveListener(HandlePointerSecondDragEvent);
         uiController.OnBuildAreaHandler.RemoveListener(HandlePlacementMode);
         uiController.OnCancelActionHandler.RemoveListener(CancleAction);
     }
@@ -39,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     #region Private Methods
 
-    private void HandleInputHit(Vector3 position)
+    private void HandlePointerDownEvent(Vector3 position)
     {
         if (!buildingModeActive)
         {
@@ -52,6 +58,16 @@ public class GameManager : MonoBehaviour
         {
             placementManager.CreateBuilding(gridPosition, grid);
         }
+    }
+
+    private void HandlePointerSecondDownEvent(Vector3 position)
+    {
+        cameraMovement.StartCameraMovement(position);
+    }
+
+    private void HandlePointerSecondDragEvent(Vector3 position)
+    {
+        cameraMovement.MoveCamera(position);
     }
 
     private void HandlePlacementMode()
