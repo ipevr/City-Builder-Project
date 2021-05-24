@@ -13,15 +13,27 @@ public class GameManager : MonoBehaviour
     [SerializeField] int width = 100;
     [SerializeField] int length = 100;
 
+    private PlayerState state;
+    public PlayerSelectionState selectionState;
+    public PlayerBuildingSingleStructureState buildingSingleStructureState;
+
     private GridStructure grid;
-    private bool buildingModeActive = false;
 
 
     #region Unity Callbacks
 
-    private void Start()
+    private void Awake()
     {
         grid = new GridStructure(cellSize, width, length);
+
+        selectionState = new PlayerSelectionState(this, cameraMovement);
+        buildingSingleStructureState = new PlayerBuildingSingleStructureState(this, placementManager, grid);
+
+        state = selectionState;
+    }
+
+    private void Start()
+    {
         cameraMovement.SetCameraBounds(0, width * cellSize, 0, length * cellSize);
 
         inputManager.OnPointerDownHandler.AddListener(HandlePointerDownEvent);
@@ -35,12 +47,12 @@ public class GameManager : MonoBehaviour
 
     private void HandlePointerUpEvent(Vector3 position)
     {
-        Debug.Log("Pointer up at " + position);
+        state.OnInputPointerUp(position);
     }
 
     private void HandlePointerDragEvent(Vector3 position)
     {
-        Debug.Log("Pointer drag at " + position);
+        state.OnInputPointerDrag(position);
     }
 
     private void OnDisable()
@@ -55,44 +67,42 @@ public class GameManager : MonoBehaviour
     #endregion
 
 
+    #region Public Methods
+
+    public void TransitionToState(PlayerState newState)
+    {
+        this.state = newState;
+        this.state.EnterState();
+    }
+
+    #endregion
+
+
     #region Private Methods
 
     private void HandlePointerDownEvent(Vector3 position)
     {
-        if (!buildingModeActive)
-        {
-            return;
-        }
-
-        Vector3 gridPosition = grid.GetGridPosition(position);
-
-        if (!grid.IsCellTaken(gridPosition))
-        {
-            placementManager.CreateBuilding(gridPosition, grid);
-        }
+        state.OnInputPointerDown(position);
     }
 
     private void HandleStartCameraMovement(Vector3 position)
     {
-        cameraMovement.StartCameraMovement(position);
+        state.OnInputPointerSecondDown(position);   
     }
 
     private void HandleCameraMovement(Vector3 position)
     {
-        if (!buildingModeActive)
-        {
-            cameraMovement.MoveCamera(position);
-        }
+        state.OnInputPointerSecondDrag(position);
     }
 
     private void HandlePlacementMode()
     {
-        buildingModeActive = true;
+        TransitionToState(buildingSingleStructureState);
     }
 
     private void CancleAction()
     {
-        buildingModeActive = false;
+        state.OnCancle();
     }
 
     #endregion
