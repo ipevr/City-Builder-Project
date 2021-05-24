@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour
         cameraMovement.SetCameraBounds(0, width * cellSize, 0, length * cellSize);
 
         inputManager.OnPointerDownHandler.AddListener(HandlePointerDownEvent);
-        inputManager.OnPointerSecondDownHandler.AddListener(HandlePointerSecondDownEvent);
-        inputManager.OnPointerSecondDragHandler.AddListener(HandlePointerSecondDragEvent);
+        inputManager.OnPointerSecondDownHandler.AddListener(HandleStartCameraMovement);
+        inputManager.OnPointerSecondDragHandler.AddListener(HandleCameraMovement);
         uiController.OnBuildAreaHandler.AddListener(HandlePlacementMode);
         uiController.OnCancelActionHandler.AddListener(CancleAction);
     }
@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour
     private void OnDisable()
     {
         inputManager.OnPointerDownHandler.RemoveListener(HandlePointerDownEvent);
-        inputManager.OnPointerSecondDownHandler.RemoveListener(HandlePointerSecondDownEvent);
-        inputManager.OnPointerSecondDragHandler.RemoveListener(HandlePointerSecondDragEvent);
+        inputManager.OnPointerSecondDownHandler.RemoveListener(HandleStartCameraMovement);
+        inputManager.OnPointerSecondDragHandler.RemoveListener(HandleCameraMovement);
         uiController.OnBuildAreaHandler.RemoveListener(HandlePlacementMode);
         uiController.OnCancelActionHandler.RemoveListener(CancleAction);
     }
@@ -60,14 +60,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void HandlePointerSecondDownEvent(Vector3 position)
+    private void HandleStartCameraMovement(Vector3 position)
     {
         cameraMovement.StartCameraMovement(position);
     }
 
-    private void HandlePointerSecondDragEvent(Vector3 position)
+    private void HandleCameraMovement(Vector3 position)
     {
-        cameraMovement.MoveCamera(position);
+        if (!buildingModeActive)
+        {
+            cameraMovement.MoveCamera(position);
+        }
     }
 
     private void HandlePlacementMode()
